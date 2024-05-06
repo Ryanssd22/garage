@@ -94,7 +94,7 @@
 
 <h1>Our garage</h1>
 
-<p>Welcome to the US Key Guard garage! Go ahead and add some cars. This website is connected to a database, so you can see what other people add too!</p>
+<p>Welcome to the US Key Guard garage! Go ahead and add some cars. This website is connected to a database, so you can see what other people add too! Hopefully this works lol</p>
 
 <form>
 <label for="brand">Brand:</label>
