@@ -48,7 +48,7 @@
 
     async function add() {
         if (newCar.brand!="" && newCar.Brand!="" && newCar.year!="") {
-            const newCarDoc = await addDoc(colRef, newCar);
+            const addCar = newCar;
             newCar = {
                 brand:"",
                 model:"",
@@ -56,6 +56,7 @@
                 owned:false,
                 id:""
             };
+            const newCarDoc = await addDoc(colRef, addCar);
             console.log("Document written with ID: ", newCarDoc.id);
             await updateDoc(doc(db, "garage", newCarDoc.id), {
                 id: newCarDoc.id
